@@ -239,6 +239,7 @@ body {
         line-height: 1.3em;
         font-weight: 500;
         padding-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .box-content-contact, .box-content-formulaire {
@@ -275,6 +276,10 @@ body {
 
     .box-content-formulaire h3 {
         text-align: center;
+    }
+
+    .box-content-formulaire hr {
+        margin-bottom: 16px;
     }
 
     form {
@@ -326,3 +331,71 @@ body {
         font-weight: 700 !important;
         text-transform: uppercase !important;
     }
+
+
+/** Footer **/
+
+    footer {
+        background-color: #1f1f1f;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+
+    footer h6 {
+        margin-top: 0px;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #ffffff !important;
+    }
+
+    footer p{
+        color: #ffffff !important;
+        line-height: 1.7em;
+        font-weight: 500;
+    }
+
+    footer a{
+        color: #e2d175 !important;
+        text-decoration: none;
+        line-height: 1.7em;
+        font-weight: 500;
+    }
+
+    .box-first-footer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .litle-box-footer {
+        padding-top: 100px;
+        padding-right: 50px;
+        padding-bottom: 100px;
+        padding-left: 50px;
+        width: 25%;
+        text-align: center;
+    }
+
+    .box-second-footer {
+        width: 100%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    .box-hr-footer {
+        width: 100%;
+    }
+
+    .box-hr-footer hr {
+        margin: 0px 45%;
+    }
+
+
+/**ALL **/
+    hr {
+        margin: 0px 35%;
+        border-color: #e2d175;
+    }
+    
