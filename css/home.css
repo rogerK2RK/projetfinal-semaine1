@@ -6,7 +6,7 @@ body {
     margin: 0px;
 }
 
-/**HEADER**/
+/** HEADER **/
 
     header {
         background-color: #1f1f1f;
@@ -38,7 +38,7 @@ body {
         color: #e2d175;
     }
 
-/**First Slide**/
+/** First Slide **/
 
     .first-section {
         display: flex;
@@ -47,24 +47,25 @@ body {
     }
 
     .box-img-studio {
-        width: 50%;
+        width: 45%;
     }
 
     .img-studio {
         width: 100%;
         height: 100%;
-        object-fit: fill;
+        object-fit: cover;
+        object-position: center top;
     }
 
-    .box-title {
-        width: 50%;
+    .box-texte {
+        width: 55%;
         color: #fff;
         display: block;
         text-align: end;
-        padding: 10% 100px 0 0;
+        padding: 10% 150px 0 0;
     }
 
-    .box-title h5 {
+    .box-texte h5 {
         font-family: 'Cantarell', Helvetica, Arial, Lucida, sans-serif;
         font-weight: 700;
         text-transform: uppercase;
@@ -74,7 +75,7 @@ body {
         line-height: 1.4em;
     }
 
-    .box-title h1 {
+    .box-texte h1 {
         font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
         font-weight: 500;
         text-transform: uppercase;
@@ -85,11 +86,99 @@ body {
         width: 100%;
     }
 
-    .box-title h6 {
+    .box-texte h6 {
         font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
         font-weight: 700;
         text-transform: uppercase;
         color: #e2d175 !important;
         letter-spacing: 2px;
         line-height: 1.5em;
+    }
+
+/** Seconde Section **/
+
+    .second-section {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 90vh;
+        background-color: #1f1f1f;
+    }
+
+    .second-section .box-texte {
+        text-align: start;
+        padding-left: 150px;
+    }
+
+    .second-section h3 {
+        font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+        text-transform: uppercase;
+        font-size: 36px;
+        color: #ffffff !important;
+        line-height: 1.5em;
+    }
+
+    .second-section p {
+        padding-bottom: 1em;
+        line-height: 1.4em;
+        font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+        font-weight: 500;
+    }
+
+    .second-section button {
+        color: #ffffff !important;
+        padding: 1em 2em;;
+        border: 0px;
+        border-radius: 0px;
+        letter-spacing: 5px;
+        font-size: 14px;
+        font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        background-color: #e2d175;
+    }
+
+/** Troisième Section **/
+
+    .troisieme-section {
+        text-align: center;
+        height: 90vh;
+        background-color: #1f1f1f;
+        padding-top: 70px;
+    }
+
+    .troisieme-section h2{
+        font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 56px;
+        color: #ffffff !important;
+        letter-spacing: 3px;
+        line-height: 1.5em;
+        margin-top: 0px;
+    }
+
+    .box-all-studio {
+        display: flex;
+    }
+
+    .box-studio {
+        position: relative;
+        width: 25%;
+        height: 560px;
+    }
+
+    .box-studio img {
+        height: 100%;
+    }
+
+    .box-studio h3 { 
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        /* left: 45%; */
+        text-transform: uppercase;
+        font-size: 40px;
+        color: #ffffff !important;
+        letter-spacing: 1px;
+        text-align: center;
     }
