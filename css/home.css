@@ -39,6 +39,82 @@ body {
         color: #e2d175;
     }
 
+    .burger {
+        display: none;
+    }
+    .burger span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px auto;
+        transition: all 0.3s ease;
+    }
+
+    @media (max-width: 480px) {
+        .logo {
+            width: 60px;
+            height: 60px;
+            margin-left: 30px;
+        }
+
+        .burger {
+            margin-right: 30px;
+
+        }
+        .img-studio {
+            object-position: right bottom ! important;
+        }
+    }
+
+    @media (max-width: 980px) {
+
+        h1 {
+            margin: 0;
+        }
+
+        .box-texte h5 {
+            margin-bottom: 10px;
+        }
+
+        nav{
+            display: none;
+        }
+
+        .burger {
+            display: block;
+        }
+
+        .first-section, .second-section {
+            flex-wrap: wrap;
+            /* flex-direction: column-reverse ! important; */
+        }
+
+        .box-img-studio {
+            width: 100% ! important;
+            height: 33%;
+        }
+
+        .img-studio {
+            object-position: right center ! important;
+        }
+
+        .box-texte {
+            width: 85% ! important;
+            color: #fff;
+            display: block;
+            text-align: end;
+            padding: 0% 0px 87px 9px ! important;
+        }
+
+        .second-section .box-texte{
+            padding-top: 100px ! important;
+            padding-right: 10% ! important;
+            padding-bottom: 100px ! important;
+            padding-left: 10% ! important;
+        }   
+    }
+
 /** First Slide **/
 
     .first-section {
@@ -98,10 +174,18 @@ body {
 
 /** Seconde Section **/
 
+@media (min-width: 981px) {
     .second-section {
         display: flex;
-        flex-direction: row-reverse;
+        /* flex-direction: row-reverse; */
         height: 90vh;
+    }
+}
+
+    .second-section {
+        display: flex;
+        /* flex-direction: row-reverse; */
+        /* height: 90vh; */
         background-color: #1f1f1f;
     }
 
