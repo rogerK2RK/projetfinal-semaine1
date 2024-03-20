@@ -1,0 +1,95 @@
+* {
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+/**HEADER**/
+
+    header {
+        background-color: #1f1f1f;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 3%;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        margin-left: 100px;
+    }
+    nav {
+        margin-right: 100px;
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    nav a.active{
+        color: #e2d175;
+    }
+
+/**First Slide**/
+
+    .first-section {
+        display: flex;
+        height: 90vh;
+        background-color: #1f1f1f;
+    }
+
+    .box-img-studio {
+        width: 50%;
+    }
+
+    .img-studio {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .box-title {
+        width: 50%;
+        color: #fff;
+        display: block;
+        text-align: end;
+        padding: 10% 100px 0 0;
+    }
+
+    .box-title h5 {
+        font-family: 'Cantarell', Helvetica, Arial, Lucida, sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 26px;
+        color: #ffffff !important;
+        letter-spacing: 5px;
+        line-height: 1.4em;
+    }
+
+    .box-title h1 {
+        font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 4vw;
+        color: #ffffff !important;
+        letter-spacing: 0.05em;
+        line-height: 1.2em;
+        width: 100%;
+    }
+
+    .box-title h6 {
+        font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #e2d175 !important;
+        letter-spacing: 2px;
+        line-height: 1.5em;
+    }
