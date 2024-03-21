@@ -5,7 +5,7 @@ const emailUser = document.getElementById("adresse-mail");
 // Verifie l'email passé dans le formulaire
 function checkEmail(){
   let emailMessage = document.getElementById("adresse-mail-validation");
-  if(/^(([0-9a-z]{2,}))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(emailUser.value)){
+  if(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(emailUser.value)){
     emailMessage.innerText = "";
   }else{
     emailMessage.innerText = "Veuiller saisir un mail "+'"'+" exemple : nom.prenom@gmail.com "+'" !';

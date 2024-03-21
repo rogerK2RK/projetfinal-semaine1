@@ -65,6 +65,19 @@ body {
         .img-studio {
             object-position: right bottom ! important;
         }
+
+        .litle-box-footer {
+            width: 100% !important;
+        }
+        .box-studio {
+            width: 100% !important;
+            height: 315px !important;
+            ;
+        }
+        
+        .box-texte h5 {
+            font-size: 18px !important;
+        }        
     }
 
     @media (max-width: 980px) {
@@ -83,6 +96,7 @@ body {
 
         .burger {
             display: block;
+            /* margin-right: 100px; */
         }
 
         .first-section, .second-section {
@@ -113,14 +127,91 @@ body {
             padding-bottom: 100px ! important;
             padding-left: 10% ! important;
         }   
+        .troisieme-section {
+            background-color: #141414 ! important;
+        }
+        .second-section{
+            background-color: #141414 ! important;
+        }
+
+        #scd-sct-bx-img {
+            height: 30em ! important;
+        }
+
+        .box-all-studio {
+            display: flex;
+            flex-wrap: wrap  ! important;
+        }
+
+        .box-studio h3 {
+            top: 32% ! important;
+        }
+        .troisieme-section h2 {
+            margin-left: 6% ! important;
+            margin-right: 6% ! important;
+        }
+        .box-texte h1 {
+            font-size: 8vw ! important;
+        }
+        .box-content-contact {
+            margin-right: 0px ! important;
+            margin-bottom: 35px ! important;
+        }
+        .box-content-formulaire {
+            margin-left: 0px ! important;
+        }
+        .box-content-contact, .box-content-formulaire {
+            width: 100%  ! important;
+        }
+        .box-all {
+            display: flex ! important;
+            flex-wrap: wrap ! important;
+        }
+        .box-first-footer {
+            display: flex ! important;
+            flex-wrap: wrap ! important;
+        }
+        .box-first-footer > div:nth-child(-n+2) {
+            padding-bottom: 0;
+        }
+    }
+    
+    @media only screen and (max-width: 980px) and (min-width: 481px){
+        .box-studio {
+            position: relative;
+            width: 50% !important;
+            height: 335px ;
+        }
+
+        .logo {
+            height: 50px;
+            width: 50px;
+            margin-left: 50px ! important;
+        }
+
+        .burger {
+            display: block;
+            margin-right: 50px;
+        }
+    }
+    @media only screen and (max-width: 480px) and (min-width: 391px){
+        .troisieme-section h2 {
+            font-size: 43px !important;
+        }
     }
 
-/** First Slide **/
+    @media (max-width: 390px){
+        .troisieme-section h2 {
+            font-size: 32px !important;
+        }
+    }
+/** First Section **/
 
     .first-section {
         display: flex;
         height: 90vh;
         background-color: #1f1f1f;
+        /* background-color: #141414; */
     }
 
     .box-img-studio {
@@ -139,7 +230,7 @@ body {
         color: #fff;
         display: block;
         text-align: end;
-        padding: 10% 150px 0 0;
+        padding: 10% 150px 5% 0;
     }
 
     .box-texte h5 {
@@ -178,7 +269,7 @@ body {
     .second-section {
         display: flex;
         /* flex-direction: row-reverse; */
-        height: 90vh;
+        /* height: 90vh; */
     }
 }
 
@@ -187,6 +278,7 @@ body {
         /* flex-direction: row-reverse; */
         /* height: 90vh; */
         background-color: #1f1f1f;
+
     }
 
     .second-section .box-texte {
@@ -227,7 +319,8 @@ body {
     .troisieme-section {
         text-align: center;
         /* height: 90vh; */
-        background-color: #1f1f1f;
+        background-color: #141414;
+        /* background-color: #1f1f1f; */
         padding-top: 70px;
     }
 
@@ -323,7 +416,7 @@ body {
         line-height: 1.3em;
         font-weight: 500;
         padding-bottom: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
 
     .box-content-contact, .box-content-formulaire {
@@ -387,8 +480,9 @@ body {
     }
 
     .box-element-form {
+        position: relative;
         width: 100%;
-        margin-bottom: 3%;
+        margin-bottom: 18px;
     }
 
     input::placeholder, textarea#message::placeholder {
@@ -403,7 +497,7 @@ body {
         height: 80px;
         border-width: 0;
         border-radius: 0;
-        margin-bottom: 3%;
+        /* margin-bottom: 3%; */
         color: #ffffff;
     }
 
@@ -498,6 +592,7 @@ body {
     font-size: 0.8rem;
     display: flex;
     color: #e2d175;
+    position: absolute;
 }
 
 #erreur,#valide{
