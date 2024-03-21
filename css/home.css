@@ -617,3 +617,20 @@ body {
     color: green;
     font-size: 0.8rem;
 }
+
+/** Animation **/
+.box-texte {
+    animation: apparitionTexte 1s ease forwards; /* Animation de 1 seconde */
+    opacity: 0; /* Texte initiallement invisible */
+}
+
+@keyframes apparitionTexte {
+    0% {
+        opacity: 0; /* Opacité de 0% au début de l'animation */
+        transform: translateX(-50px); /* Translation de -50px vers la gauche */
+    }
+    100% {
+        opacity: 1; /* Opacité de 100% à la fin de l'animation */
+        transform: translateX(0); /* Translation de retour à la position initiale */
+    }
+}
