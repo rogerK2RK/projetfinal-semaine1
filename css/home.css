@@ -380,24 +380,31 @@ body {
         width: 100%;
         color: #ffffff;
         background-color: #141414;
-        padding: 16px;
+        padding: 16px 0px 16px 8px;
         border-width: 0;
         border-radius: 0;
+        /* margin-bottom: 3%; */
+    }
+
+    .box-element-form {
+        width: 100%;
         margin-bottom: 3%;
     }
 
     input::placeholder, textarea#message::placeholder {
         color: #ffffff;
+        /* padding-left: 8px; */
     }
 
     textarea#message {
         background-color: #141414;
         width: 100%;
+        padding: 16px 0px 16px 8px;
         height: 80px;
-        padding: 16px;
         border-width: 0;
         border-radius: 0;
         margin-bottom: 3%;
+        color: #ffffff;
     }
 
     form button {
@@ -482,4 +489,27 @@ body {
         margin: 0px 35%;
         border-color: #e2d175;
     }
-    
+
+
+/** message formulaire **/
+.result{
+    /* display: none; */
+    /* margin-top: 4px; */
+    font-size: 0.8rem;
+    display: flex;
+    color: #e2d175;
+}
+
+#erreur,#valide{
+    display: none;
+}
+
+#erreur{
+    font-size: 0.8rem;
+    color: #e2d175;
+}
+
+#valide {
+    color: green;
+    font-size: 0.8rem;
+}
