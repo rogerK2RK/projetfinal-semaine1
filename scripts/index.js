@@ -1,3 +1,16 @@
+/** Fix the header top on scroll **/
+
+window.addEventListener('scroll', function() {
+    var header = document.getElementById('myHeader');
+    var scrollPosition = window.scrollY;
+    
+    if (scrollPosition > 0) {
+        header.classList.add('sticky');
+    } else {
+        header.classList.remove('sticky');
+    }
+});
+
 // Email
 
 const emailUser = document.getElementById("adresse-mail");
@@ -66,10 +79,10 @@ const messagetUser  = document.getElementById("message");
 // Verifie le sujet passé dans le formulaire
 function checkMessage(){
     let messageMessage = document.getElementById("message-validation");
-    if(/^([\w\s]{30,})$/.test(messagetUser.value)){
+    if(/^([\w\s]{10,})$/.test(messagetUser.value)){
         messageMessage.innerText = "";
     }else{
-        messageMessage.innerText = "Veuillez entrer 30 caractères ou plus dans le champ message.";
+        messageMessage.innerText = "Veuillez entrer 10 caractères ou plus dans le champ message.";
         return false;
     }
 }
