@@ -404,7 +404,7 @@ body {
         z-index: 1 ! important;
         width: 100%;
         height: 100%;
-        filter: blur(3px);
+        /* filter: blur(3px); */
     }
 
     .box-all {
@@ -656,6 +656,21 @@ body {
     font-size: 66px;
     letter-spacing: 1px;
     margin-bottom: 5px;
+}
+
+@media (max-width: 670px){
+    .box-text-contact h1 {
+        font-size: 51px ! important;
+    }
+
+    .box-text-contact h6 {
+        font-size: 22px !important;
+    }
+}
+@media (max-width: 980px){
+    #bx-glbl-map {
+        display: none ! important;
+    }
 }
 .box-text-contact h6{
     font-weight: 600;
