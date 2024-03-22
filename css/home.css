@@ -643,6 +643,9 @@ body {
     justify-content: center;
     padding: 2% 0;
 }
+button {
+    cursor: pointer;
+}
 
 .box-text-contact {
     color: #fff;
